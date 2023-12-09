@@ -1,0 +1,131 @@
+/* Main styles */
+.page {
+  color: var(--text-dark, #000);
+  font-family: var(--main-font, Roboto, sans-serif);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  background-image: url(../images/top-background1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-block-end: 451px;
+  padding-inline-start: clamp(0.75rem, 0.068rem + 3.409vw, 2.25rem);
+  padding-inline-end: clamp(0.75rem, 0.068rem + 3.409vw, 2.25rem);
+  padding-block-start: 20px;
+}
+
+.header-logo__link {
+  flex-shrink: 0;
+  inline-size: clamp(12.5rem, 9.773rem + 13.636vw, 18.5rem);
+  block-size: clamp(3.125rem, 2.443rem + 3.409vw, 4.625rem);
+}
+
+.header-logo__image {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.header__socials-list {
+  display: flex;
+  gap: clamp(1.875rem, 1.591rem + 1.42vw, 2.5rem);
+  list-style: none;
+}
+
+.header__socials-list-item-image {
+  flex-shrink: 0;
+}
+
+.platforms-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  max-width: 624px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding: clamp(1.875rem, 0.739rem + 5.682vw, 4.375rem) clamp(0.75rem, -0.898rem + 8.239vw, 4.375rem);
+  background-color: var(--section-bright, #f8f200);
+}
+
+.platforms-banner__text {
+  font-family: var(--accent-font, Archangelsk, sans-serif);
+  font-size: clamp(1.875rem, 0.966rem + 4.545vw, 3.875rem);
+  text-align: center;
+}
+
+.platforms-banner__button {
+  display: flex;
+  padding: 19px 50px;
+  background-color: var(--section-dark, #000);
+  inline-size: 244px;
+  block-size: 60px;
+}
+
+.platforms-banner__button-text {
+  color: var(--text-bright, #f8f200);
+  font-family: var(--main-font, Roboto, sans-serif);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.136rem + 0.568vw, 1.5rem);
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.game-description__section {
+  padding: 70px clamp(0.75rem, 0.068rem + 3.409vw, 2.25rem);
+  background-color: var(--background-color, #fff);
+}
+
+.game-description__section_title {
+  max-width: 620px;
+  margin-block-end: 25px;
+  color: var(--text-dark, #000);
+  font-family: var(--accent-font, Archangelsk, sans-serif);
+  font-size: clamp(1.875rem, 0.966rem + 4.545vw, 3.875rem);
+}
+
+.game-description__section_text_link {
+  color: var(--links-text);
+}
+
+.game-description__section_text {
+  max-width: 788px;
+  color: var(--game-description-text, #777);
+  font-family: var(--main-font, Roboto, sans-serif);
+  font-size: clamp(1rem, 0.943rem + 0.284vw, 1.125rem);
+  line-height: 32px;
+}
+
+.galery__section {
+  margin-inline-start: clamp(0rem, -1.023rem + 5.114vw, 2.25rem);
+  margin-inline-end: clamp(0rem, -1.023rem + 5.114vw, 2.25rem);
+  margin-block-end: 70px;
+}
+
+.galery__section_list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.galery__section_list-item-image {
+  inline-size: 100%;
+}
+
+@media (min-width: 700px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .platforms-banner {
+    margin-inline-start: auto;
+  }
+}
